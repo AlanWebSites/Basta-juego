@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basta</title>
+</head>
+<body>
+    <style>
+body{
+animation: 4s linear 0s infinite running myColor;
+}
+
+@keyframes myColor{
+0%{background-color:red;}
+10%{background-color:orangered;}
+20%{background-color: orange;}
+30%{background-color: gold;}
+40%{background-color:lime;}
+50%{background-color: aquamarine;}
+60%{background-color:cyan;}
+70%{background-color:blue;}
+80%{background-color:blueviolet}
+90%{background-color:hotpink;}
+100%{background-color: red;}
+}
+
+button{
+background-color:tomato;
+color:brown;
+border-radius:50px;
+padding: 25px;
+margin:55px;
+box-shadow: 9px 9px 8px salmon;
+font-size:30px;
+}
+button:hover{
+    background-color: crimson;
+    color:darkred;
+    box-shadow: 10px 10px 5px palevioletred;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color:beige;
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.boton{
+background-color:steelblue;
+color:blue;
+border-radius:50px;
+padding: 25px;
+margin:55px;
+box-shadow: 9px 9px 8px rgb(102, 186, 255);
+font-size:30px;
+}
+
+.boton:hover{
+    background-color: rgb(1, 77, 255);
+    color:rgb(12, 0, 91);
+    box-shadow: 10px 10px 5px rgb(1, 182, 182);
+}
+    </style>
+    <script>
+function letra(){
+var letra= Math.floor(Math.random()*27);
+alert("Letra numero: "+ letra)
+}
+
+function Calc(){
+var nombre = Number(prompt("Ingresa tu puntaje en el apartado Nombre",""));
+var apellido = Number(prompt("Ingresa tu puntaje en el apartado Apellido",""));
+var pais = Number(prompt("Ingresa tu puntaje en el apartado Ciudad/Pais",""));
+var animal = Number(prompt("Ingresa tu puntaje en el apartado Animal",""));
+var fruto = Number(prompt("Ingresa tu puntaje en el apartado Flor o Fruto",""));
+var cosa = Number(prompt("Ingresa tu puntaje en el apartado Cosa",""));
+var color = Number(prompt("Ingresa tu puntaje en el apartado Color",""));
+
+var res  = nombre + apellido + pais + animal + fruto + cosa + color;
+
+alert("Tu puntaje total es : " + res);
+}
+
+
+    </script>
+<div align="center">
+    <button onclick="Calc()">Calcular Puntaje</button>
+    <button onclick="letra()" class="boton">Generar letra aleatoria</button>
+    <font size="15"><pre>
+    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27
+    A B C D E F G H I  J  K  L  M  N  Ñ  O  P  Q  R  S  T  U  V  W  X  Y  Z
+</pre></font>
+<table>
+<th>Basta</th>
+ <tr>
+<td>Nombre</td>
+<td>Apellido</td>
+<td>Ciudad/Pais</d>
+<td>Animal</td>
+<td>Flor o Fruto</td>
+<td>Cosa</td>
+<td>Color</td>
+<td color="gold">Total</td>
+
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+ <tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+ <tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+ <tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+ <tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+ <tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+<tr>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+    <td><input type="text" placeholder="Escribe aqui" size="9px"></td>
+
+</tr>
+
+
+
+</table>
+
+</div>
+</body>
+</html>
